@@ -7,9 +7,8 @@ terraform {
  }
 
  backend "s3" {
-   bucket = "tf-tuts-state"
+   bucket = "test-bucket-terraform-saurabhnegi"
    key    = "state"
-   region = "eu-central-1"
+   region = "us-west-1"
  }
 }
-
