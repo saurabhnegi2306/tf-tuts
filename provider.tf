@@ -7,7 +7,7 @@ terraform {
  }
 
  backend "s3" {
-   bucket = "test-bucket-terraform-saurabhnegi"
+   bucket = "test-bucket-terraform-saurabhnegi1"
    key    = "state"
    region = "us-west-2"
  }
