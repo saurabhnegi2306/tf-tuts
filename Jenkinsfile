@@ -15,13 +15,12 @@ pipeline{
                 }
             }    
         }
-        // stage('Deploy') {
-        //     steps{
-        //         sh 'terraform init -reconfigure'
-        //         sh 'whoami'
-        //         sh 'terraform destroy -auto-approve'
-        //         sh 'terraform apply -auto-approve'
-        //     }
-        // }    
+        stage('Deploy') {
+            steps{
+                sh 'terraform init -reconfigure'
+                sh 'terraform destroy -auto-approve'
+                sh 'terraform apply -auto-approve'
+            }
+        }    
     }
 }
