@@ -9,6 +9,6 @@ terraform {
  backend "s3" {
    bucket = "test-bucket-terraform-saurabhnegi"
    key    = "state"
-   region = "us-west-1"
+   region = "us-west-2"
  }
 }
