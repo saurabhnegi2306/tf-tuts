@@ -16,7 +16,7 @@ pipeline{
         stage('Deploy') {
             steps{
                 sh 'terraform init'
-                sh 'aws s3 ls --region=us-east-1'
+                sh 'aws s3 ls'
                 sh 'terraform destroy -auto-approve'
                 sh 'terraform apply -auto-approve'
             }
